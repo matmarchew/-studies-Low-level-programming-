@@ -1,0 +1,20 @@
+Zadanie 1
+Napisz program, który pyta o imiê, wczytuje je z klawiatury a nastêpnie wypisuje spersonalizowane przywitanie.
+
+Zadanie 2
+Napisz program, który wczyta dwie liczby (jedno cyfrowe) doda je do siebie i wyœwietli wynik.
+Wskazówka: U¿yj dwukrotnie sys_read aby wczytaæ dwa teksty, pierwsze znaki skonwertuj na liczby odejmuj¹c kod ASCII '0', dodaj je a  potem skonwertuj na napis (mo¿na uzupe³niæ odpowiednio przygotowany tekst) i wypisz.  
+
+Zadanie 3
+Napisz program który otwiera plik do zapisu (je¿eli go nie ma to go tworzy) i wpisuje do niego tekst np. Twoje imiê i nazwisko a nastêpnie go zamyka. 
+
+Zadanie 4
+Napisz program, który odczyta czas systemowy i wypisze aktualna godzinê. 
+Wskazówki: 
+Mo¿esz wykorzystaæ wywo³anie systemowe sys_time (13 lub 201).
+Jako wynik wywo³ania systemowego otrzymujemy liczbê sekund od 1 stycznia 1970. 
+Reszta z dzielenia przez 10 da nam cyfrê jednoœci liczby sekund, nastêpnie dzielenie przez 6 da nam cyfrê dziesi¹tek liczby sekund itd.
+Przed ka¿dym dzieleniem nale¿y wyzerowaæ EDX/RDX
+Wygodnie jest przygotowaæ sobie tekst typu
+db "XX:XX:XX", 0ah
+i uzupe³niæ miejsca X odpowiednimi cyframi.
