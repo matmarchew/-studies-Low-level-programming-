@@ -1,0 +1,17 @@
+Zadanie 1
+Proszê napisaæ program sprawdzaj¹cy, czy dana liczba jest liczb¹ pierwsz¹.
+W wersji podstawowej liczba mo¿e byæ na sztywno wpisana w program.
+W rozszerzonej wczytujemy j¹ z klawiatury.
+
+Zadanie 2
+Proszê napisaæ program wypisuj¹cy rozk³ad zadanej liczby na czynniki pierwsze. 
+Mo¿na wypisywaæ pos³uguj¹c siê asm_io lub printf.
+Np. dla liczby 60 wyjœcie powinno zawieraæ:
+2 2 3 5
+ 
+Zadanie 3
+Proszê napisaæ program szukaj¹cy najmniejszej wspólnej wielokrotnoœci dwóch liczb wczytanych z klawiatury.
+
+Zadanie 4
+Proszê napisaæ program szukaj¹cy liczb pierwszych w zadanym przedziale.
+Algorytm mo¿e po prostu sprawdzaæ po kolei liczby z zadanego przedzia³u. 
