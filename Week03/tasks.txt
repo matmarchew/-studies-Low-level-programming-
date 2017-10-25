@@ -1,0 +1,30 @@
+Zadanie 1
+Zaimplementowaæ program wczytuj¹cy liczby ca³kowite ze znakiem i odk³adaj¹cy je na stos a¿ do wczytania 0.
+Nastêpnie wczytujemy dodatkow¹ liczbê ca³kowit¹ A.
+Na ekran nale¿y wypisaæ iloœæ wczytanych liczb mniejszych od A. 
+
+Zadanie 2
+Zaimplementowaæ funkcjê szukaj¹c¹ elementu maksymalnego w tablicy liczb typu int (32 bitowe).
+Przed wywo³aniem funkcji na stosie znajduj¹ siê liczba elementów tablicy i wskaŸnik na pierwszy element tablicy. 
+Funkcja powinna samodzielnie posprz¹taæ te dane ze stosu (proszê uwa¿aæ na adres powrotu).
+Po powrocie z funkcji element maksymalny powinien znajdowaæ siê w rejestrze RAX.
+
+Zadanie 3
+Napisaæ funkcjê przekszta³caj¹c¹ dany ³añcuch tekstowy (zakoñczony zerem) na liczbê ca³kowit¹ oraz drug¹ funkcjê przekszta³caj¹c¹ liczbê ca³kowit¹ (ze znakiem) na ³añcuch tekstowy zakoñczony zerem ( np. dla liczby 123 wynikiem powinno byæ "123",0). 
+Program powinien prezentowaæ mo¿liwoœci tych funkcji.
+
+Jak przekazaæ argumenty i jak zwróciæ wynik?
+Czy mo¿na wynik zwróciæ na stosie? 
+
+Zadanie 4
+Dane s¹ dwa ci¹gi znaków s1 i s2 (poni¿sze s¹ przyk³adowe):
+s1="abcdefghijklmnopqrstuvwxyz"
+s2="zyxwvutsrqponmlkjihgfedcba"
+Napisz program, który dla ka¿dej litery ci¹gu wejœciowego znalezionej na pozycji n w ci¹gu s1 wypisze odpowiadaj¹c¹ jej literê z ci¹gu s2 na pozycji n, natomiast nie znalezione znaki wypisuje bez zmian.
+Przyk³ad:
+Podaj ci¹g znaków...
+ala ma kota
+zoz nz plgz
+Podaj ci¹g znaków...
+123 zoz nz plgz.
+123 ala ma kota.
