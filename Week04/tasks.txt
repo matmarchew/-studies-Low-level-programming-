@@ -1,0 +1,41 @@
+Zadanie 1
+Napisaæ w assemblerze funkcjê main, która wczytuje dwie liczby ca³kowite przy u¿yciu funkcji scanf z biblioteki standardowej jêzyka C i wypisuj¹cy na ekran ich iloraz przy u¿yciu funkcji printf. 
+Nale¿y przys³aæ tylko plik ASM.
+
+Zadanie 2
+Napisaæ aplikacjê wyliczaj¹c¹ iloczyn elementów wektora danych. Aplikacja ma byæ z³o¿ona z dwóch modu³ów:
+ w C (inicjalizacja wektora, operacje IO):  
+w ASM (wyliczenie iloczynu) argumentami dla funkcji jest iloœæ elementów tablicy i wskaŸnik na pierwszy element tablicy.
+
+Zadanie 3
+Napisaæ funkcjê o nag³ówku
+void sortuj( int * a, int *b, int * c);
+sortuj¹c¹ malej¹co wartoœci trzech podanych zmiennych.
+Po wywo³aniu funkcji wartoœci zmiennych powinny zostaæ odpowiednio pozamieniane. 
+Na przyk³ad 
+int x=5, y=3, z=4;
+sortuj( &x, &y, &z);
+printf(" %d %d %d \n", x, y, z);
+powinno wypisaæ 
+5 4 3
+
+Zadanie 4
+Napisaæ modu³ asemblerowy implementuj¹cy funkcjê minmax  wyliczaj¹c¹ minimalny i maksymalny spoœród argumentów funkcji. Pierwszym argumentem funkcji jest liczba ca³kowita N>0, po której nastêpuje N argumentów ca³kowitych (patrz uwaga poni¿ej).   
+Wyniki maj¹ byæ zwracane jako struktura MM.
+
+typedef struct{
+    int max;
+    int min;
+} MM;
+
+MM minmax( int N, ...);
+
+int main(){
+   MM wynik = minmax(7, 1, -2, 4 , 90, 4, -11, 101);
+   printf("min = %d, max = %d \n", wynik.min, wynik.max);
+   return 0;
+}
+Aplikacja ma byæ z³o¿ona z dwóch modu³ów w C (operacje IO, wywo³anie funkcji ) i ASM (wyznaczenie minimum i maksimum).
+Uwaga: Sposób zwracania zale¿y od systemu operacyjnego i wersji kompilatora:
+Linux: Jako pierwszy argument funkcji minmax zostanie przekazany wskaŸnik na obiekt typu MM, który nale¿y uzupe³niæ.
+Windows, starsze gcc pod linuxem: Struktura MM mieœci siê w sumie rejestrów EDX:EAX i tam powinna byæ zwrócona.
