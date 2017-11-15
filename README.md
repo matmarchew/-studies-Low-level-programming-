@@ -13,7 +13,7 @@ nasm -f elf64 asm64_io.asm -o asm64_io.o <br />
 nasm -felf64 -o name.o name.asm  <br />
 gcc -o name name.o driver64 p asm64_io.o <br />
 
--Week04<br />
+-Week04 and Week05<br />
 nasm -felf32 name.asm -o name.o<br />
 gcc -m32 -o name2.o -c name2.c<br />
 gcc -m32 -o name2.o name.o name <br />

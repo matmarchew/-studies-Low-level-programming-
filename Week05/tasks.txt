@@ -1,0 +1,24 @@
+Zadanie 1
+Proszê napisaæ w assemblerze funkcjê o nag³ówku
+extern "C" double wartosc(double a, double b, double  c, double d, double x);
+wyliczaj¹c¹ wartoœæ wyra¿enia y=ax3+bx2+cx+d. Funkcja ma pobieraæ dane wejœciowe od procedury wo³aj¹cej napisanej w C, która wyœwietla wyniki obliczeñ.
+
+Zadanie 2
+Proszê napisaæ funkcjê asemblerow¹ o nag³ówku
+extern "C" void prostopadloscian( float a, float b, float c, float * objetosc, float * pole);
+wyliczaj¹c¹ objêtoœæ i pole powierzchni prostopad³oœcianu a. Funkcja ma pobieraæ dane wejœciowe od procedury wo³aj¹cej napisanej w C, która wyœwietla wyniki obliczeñ.
+
+Zadanie 3
+Proszê napisaæ funkcjê asemblerow¹ o nag³ówku
+extern "C" long double iloczyn_skalarny(int n, long double * x, long double * y);
+mno¿¹c¹ skalarnie dwa n-wymiarowe wektory liczb rzeczywistych o wspó³rzêdnych w tablicach x i y. 
+Funkcja ma pobieraæ dane wejœciowe od procedury wo³aj¹cej napisanej w C, która wyœwietla wyniki obliczeñ.
+
+Zadanie 4
+Proszê napisaæ funkcjê asemblerow¹ tablicuj¹c¹ wartoœci funkcji:
+    y=a*(sin(P*2*pi*x))2 + b*(sin(Q*2*pi*x))2
+dla k>=2 równoodleg³ych punktów w przedziale od xmin do xmax.(tj.  x1 = xmin ... xk = xmax )
+Funkcja ma pobieraæ dane wejœciowe od procedury wo³aj¹cej napisanej w C, która wyœwietla wyniki obliczeñ.
+Funkcja ma mieæ nag³ówek
+extern "C" void tablicuj(double a, double b, double P, double Q, double xmin, double xmax, int k,  double * wartosci);
+Wynik ma byæ zapisany w tablicy wartosci (zakladamy, ¿e jest odpowiednio duza);
