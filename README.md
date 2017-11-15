@@ -16,4 +16,4 @@ gcc -o name name.o driver64 p asm64_io.o <br />
 -Week04<br />
 nasm -felf32 name.asm -o name.o<br />
 gcc -m32 -o name2.o -c name2.c<br />
-gcc -m32 name2.o name.0 name <br />
+gcc -m32 -o name2.o name.o name <br />
