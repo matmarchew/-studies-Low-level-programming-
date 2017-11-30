@@ -1,0 +1,11 @@
+Zadanie 1
+Uruchomiæ gdb na przyk³adowym programie debug ustawiæ break na etykietê stop i wypisaæ zawartos´œæ rejestrów oraz listê funkcji, a nastêpnie zdeasemblowaæ wszystkie funkcje programu i znaleŸæ b³¹d odpowiedzialny za niewys´wietlanie napisu “Hello World!”, 10, 13
+Naprawi b³¹d bezpoœrednio w gdb tak aby program wykona³ siê poprawnie wys´wietlaj¹c napis. 
+
+Zadanie 2
+Dostêpny jest plik funcja.c z funkcj¹ main i plik binarny funkcja32  programu w wersji 32-bit (fukcja32_O2 - wersja skompilowana z optymalizacj¹ O2). Chciano przekompilowaæ ten program do wersji 64-bitowej. Niestety zagin¹³ plik C  z definicj¹ funkcji  
+  char f(char, char, char);
+Odtwórz ten plik u¿ywaj¹c gdb i analizuj¹c funkcjê f. 
+
+Zadanie 3
+U¿ywaj¹c debugera do obejœcia zabezpieczeñ odczytaj sekretna informacjê maj¹c do dyspozycji plik pass32

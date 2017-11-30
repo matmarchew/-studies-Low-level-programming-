@@ -1,0 +1,23 @@
+gdb pass32
+set disassembly-flavor intel
+break check
+run
+stepi 19
+set $eax=1
+c
+
+Dostêp przyznany!
+
+TOP SECRET
+----------
+Puk puk.
+- Kto tam?
+(d³uga cisza)
+- Java.
+
+Puk puk.
+- Kto tam?
+- C++.
+
+Puk puk.
+- Assembler.

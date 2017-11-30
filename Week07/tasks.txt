@@ -1,0 +1,56 @@
+Zadanie 1
+Napisz w assemblerze funkcjê 
+extern "C" int iloczyn (int n, int * tab);
+która oblicza iloczyn n liczb ca³kowitych znajduj¹cych siê w tablicy tab np. 
+int tab[] ={1, 2, 3, 4};
+iloczyn(4, tab);
+powinno zwróciæ 24. 
+  
+Zadanie 2
+Napisz w assemblerze funkcjê 
+extern "C" double wartosc (double a, double b, double x, int n);
+która zwraca wartosc = (a*x+b)^n
+Wywo³anie wartosc(4, 3, 2, 2); powinno zwróciæ 121.    
+Obliczenia nale¿y wykonaæ na jednostce "SSE".
+ 
+Zadanie 3
+Zaimplementuj w assemblerze funkcjê 
+extern "C" int iloczyn (int n, ...);
+która oblicza iloczyn n liczb ca³kowitych podanych jako kolejne argumenty np. 
+iloczyn(4, 1, 2, 3, 4);
+powinno zwróciæ 24.   
+
+Zadanie 4
+#include <cstdio>
+
+using namespace std;
+class Faktura{
+private:
+  int id;
+  float obrot;
+  float podatekNaliczony;
+  float stawkaPodatku; 
+  static int nextID; 
+public:
+  Faktura(double obrot,  double stawkaPodatku = 0.23, double podatekNaliczony = 0.0):
+  id(nextID++), obrot(obrot), 
+  podatekNaliczony(podatekNaliczony), stawkaPodatku(stawkaPodatku){}
+};
+
+int Faktura::nextID = 0;
+
+extern "C" float podatek(Faktura f);
+extern "C" void wypisz(const Faktura & f); 
+
+int main(){
+  Faktura buraki(1000,  0.23, 100);
+  printf("Podatek : %f\n", podatek( buraki));
+  wypisz(buraki);
+  return 0;
+}
+
+Dla powy¿szego kodu w C++ napisz modu³ assemblerowy implementuj¹cy funkcje:
+float podatek(Faktura f) - zwracaj¹c¹ nale¿ny podatek wed³ug wzoru:  
+podatek= (obrót - podatekNaliczony) * stawkaPodatku
+void wypisz(const Faktura & f) - wypisuj¹c¹ na ekran napis przy pomocy standardowej funkcji printf 
+printf("Faktura %d : obrot %f podatek %f\n", f.id, f.obrot, podatek(f));

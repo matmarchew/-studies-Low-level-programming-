@@ -1,0 +1,13 @@
+gdb debug
+break stop
+info r
+info functions
+set disassembly-flavor intel
+disassembly main
+disassembly stop
+run
+stepi 3
+set $ecx=adres_zmiennej
+c
+
+W rejestrze ecx musi byæ adres zmiennej przechowuj¹cej "Hello World!"
