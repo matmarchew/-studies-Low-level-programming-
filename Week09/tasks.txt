@@ -1,0 +1,14 @@
+Zadanie 1
+Proszê napisaæ funkcjê asemblerow¹ diff, która korzysta z operacji SSE w celu wyliczenia numerycznej pochodnej z tablicy jednowymiarowej T zmiennych 8-bitowych (np.piksele obrazu). 
+W praktyce jest to ró¿nica s¹siaduj¹cych pikseli. 
+Funkcja DIFF jest trochê ogólniejsza, dostaje na wejœciu dwa wiersze W1 i W2 o d³ugoœci n.
+Pochodn¹ DIFF nale¿y wyliczaæ wed³ug wzoru:
+DIFF[i]=W2[i]-W1[i]
+
+Zadanie 2
+Korzystaj¹c z instrukcji SSE proszê napisaæ procedurê wyliczaj¹c¹ amplitudê gradientu obrazu - 8-bitowej bitmapy. Na Listingu 4 przedstawiony jest kod z instrukcjami pozwalaj¹cymi czytaæ i pisaæ do bitmapy 256-kolorowej. Dla polepszenia dok³adnoœci obliczeñ gradientu, zarówno dane wejœciowe jak i wyjœciowe s¹ typu float. Na Listingu 4 przedstawiono równie¿ prototyp funkcji licz¹cej gradient. Gradient GRAD(i,j) w pikselu (i,j) liczony jest wed³ug wzoru:
+GRAD(i,j)=sqrt((DATA(i+1,j)-DATA(i-1,j))2+(DATA(i,j+1)-DATA(i,j-1))2)
+
+Zadanie 3
+Korzystaj¹c z instrukcji SSE proszê napisaæ procedurê zmniejszaj¹c¹ dwukrotnie rozmiar bitmapy przedstawionej na Rys. 1. Ka¿dy stopieñ szaroœci piksela OUT(i,j) wynikowej bitmapy ma byæ œredni¹ z czterech odpowiednich stopni szaroœci pikseli bitmapy wejœciowej IN wed³ug wzoru: 
+OUT(i,j) = (IN(2*i,2*j) + IN(2*i +1,2*j) + IN(2*i,2*j + 1) + IN(2*i + 1,2*j + 1))/4

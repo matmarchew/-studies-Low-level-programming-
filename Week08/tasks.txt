@@ -1,0 +1,12 @@
+Zadanie 1
+Zaimplementuj w osobnym module assemblerowym funkcje, które rotuj¹ w lewo bity w liczbie x  o n pozycji o nastêpuj¹cych nag³ówkach  
+unsigned int rotate(unsigned int x, int n = 1);
+unsigned char rotate(unsigned char x, int n = 1);
+Napisz program z C++ demonstruj¹cy u¿ycie tego modu³u asemblerowego.
+
+Zadanie 2
+Wykorzystuj¹c operacje ³añcuchowe i  przedrostek REP zaimplementuj w asemblerze funkcje
+// kopiuje n liczb typu int z zrodla do celu 
+void kopiuj(int * cel, int * zrodlo, unsigned int n);
+// zeruje tablice liczb typu int o rozmiarze n
+void zeruj(int * tablica, unsigned int n);
